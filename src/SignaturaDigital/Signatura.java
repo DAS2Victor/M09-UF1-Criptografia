@@ -20,7 +20,7 @@ public class Signatura {
         }
         return signatura;
     }
-    //Validar una firma amb la 
+    //Validar una firma amb la clau pública
     public static boolean validar(byte[] signatura, String dades, PublicKey pub) {
         byte[] data = dades.getBytes();
         try {

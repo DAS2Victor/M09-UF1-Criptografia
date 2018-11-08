@@ -23,6 +23,7 @@ public class Claus {
         }
         return keys;
     }
+    
     //Encriptar amb clau pública
     public static byte[] encriptar(byte[] data, PublicKey pub) {
         byte[] dades = null;
@@ -35,6 +36,7 @@ public class Claus {
         }
         return dades;
     }
+    
     //Desencriptar amb clau privada
     public static byte[] desencriptar(byte[] data, PrivateKey priv) {
         byte[] dades = null;
@@ -47,6 +49,7 @@ public class Claus {
         }
         return dades;
     }
+    
     //Xifrat amb clau embolcallada
     public static byte[][] encryptWrappedData(byte[] data, PublicKey pub) {
         byte[][] encWrappedData = new byte[2][];
@@ -67,6 +70,7 @@ public class Claus {
            }
         return encWrappedData;
     }
+    
     //Desxifrar clau embolcallada
     public static byte[] decryptWrappedData(byte[] encMsg, byte[] encKey, PrivateKey priv) {
         byte[] missatge = null;

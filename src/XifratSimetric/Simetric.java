@@ -25,7 +25,6 @@ public class Simetric {
     }     
     return sKey;       
   }
-    
     //Genera una clau de xifrat
     public static SecretKey generarClauText(String text, int mida){
         SecretKey sKey = null;
